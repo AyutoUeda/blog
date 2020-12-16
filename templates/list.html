@@ -11,7 +11,7 @@
         <h5 class="card-header">{{ item.category }}</h5>
         <div class="card-body">
           <h5 class="card-title">{{ item.title }}</h5>
-          <a href="#" class="btn btn-primary">ボタン</a>
+          <a href="{% url 'detail' item.pk %}" class="btn btn-primary">詳細へ</a>
         </div>
       </div>        
       {% endfor %}

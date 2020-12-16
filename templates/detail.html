@@ -10,7 +10,9 @@
   <h5 class="card-header">{{ object.category}}</h5>
   <div class="card-body">
     <h5 class="card-title">{{object.title}}</h5>
-    <a href="#" class="btn btn-primary">ボタン</a>
+    <a href="{% url 'list' %}" class="btn btn-primary">一覧へ</a>
+    <a href="{% url 'update' %}" class="btn btn-primary">編集する</a>
+    <a href="{% url 'delete' %}" class="btn btn-primary">削除する</a>
   </div>
 </div>
 {% endblock content %}
